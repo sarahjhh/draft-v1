@@ -1,5 +1,6 @@
-## Collector Plugin for Snap
 
+## About This
+Here you will find an example plugin that cover the basics for writing a collector plugin.
 
 ## Plugin Naming, Files, and Directory
 For your collector plugin, create a new repository and name your plugin project using the following format:
