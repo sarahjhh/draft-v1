@@ -4,7 +4,7 @@
 ## Plugin Naming, Files, and Directory
 For your collector plugin, create a new repository and name your plugin project using the following format:
 
->snap-plugin-[*plugin-type*]-[*plugin-name*]
+>snap-plugin-[plugin-type]-[plugin-name]
 
 For example: 
 >snap-plugin-collector-rand
@@ -12,10 +12,10 @@ For example:
 
 Example files and directory structure:  
 ```
-snap-plugin-[*plugin-type*]-[*plugin-name*]
- |--[*plugin-name*]
-  |--[*plugin-name*].go  
-  |--[*plugin-name*]_test.go  
+snap-plugin-[plugin-type]-[plugin-name]
+ |--[plugin-name]
+  |--[plugin-name].go  
+  |--[plugin-name]_test.go  
  |--main.go
 ```
 
