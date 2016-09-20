@@ -1,7 +1,7 @@
 ## Collector Plugin for Snap
 
 
-### Plugin Naming, Files, and Directory
+## Plugin Naming, Files, and Directory
 For your collector plugin, create a new repository and name your plugin project using the following format:
 
 >snap-plugin-[*plugin-type*]-[*plugin-name*]
@@ -33,7 +33,7 @@ snap-plugin-collector-rand
 * You should specifiy the *test-size* (either small, medium, or large), see the test size criteria here.
 
 
-### Interface Methods
+## Interface Methods
 
 In order to write a plugin for Snap, it is necessary to define a few methods to satisfy the appropriate interfaces. These interfaces must be defined for a collector plugin:
 
@@ -56,7 +56,7 @@ The interface is slightly different depending on what type (collector, processor
 
 
 
-### Starting a plugin
+## Starting a plugin
 
 After implementing a type that satisfies one of {collector, processor, publisher} interfaces, all that is left to do is a call the appropriate plugin.StartX() with your plugin specific options. That could be as simple as:
 
@@ -64,7 +64,7 @@ After implementing a type that satisfies one of {collector, processor, publisher
 	plugin.StartCollector(rand.RandCollector{}, pluginName, pluginVersion)
 ```
 
-#### Meta options
+### Meta options
 
 The available options are defined in [plugin/meta.go](https://github.com/intelsdi-x/snap-plugin-lib-go/tree/master/v/1/plugin/meta.go). You can use some or none of the options. The options with definitions/explanations are below:
 
