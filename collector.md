@@ -5,6 +5,7 @@
 For your collector plugin, create a new repository and name your plugin project using the following format:
 
 >snap-plugin-[*plugin-type*]-[*plugin-name*]
+
 For example: 
 >snap-plugin-collector-rand
 
