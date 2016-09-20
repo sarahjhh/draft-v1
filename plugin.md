@@ -10,7 +10,7 @@ include:
 ## About This
 Here you will find example plugins that cover the basics for writing collector, processor, and publisher plugins.
 
-## Mandatory package
+### Mandatory package
 
 There is one mandatory package every plugin must use. Your plugin should import the plugin package from *snap-plugin-lib-go* to utilize all libraries:
 
@@ -44,20 +44,6 @@ A Snap publisher plugin is a sink in the Snap pipeline.  It publishes data into 
 	GetConfigPolicy() (ConfigPolicy, error)
     Publish([]Metric, Config) error
 ```
-
-
-
-## Mandatory package
-
-There is one mandatory package every plugin must use. Your plugin should import the plugin package from *snap-plugin-lib-go* to utilize all libraries:
-
-```
-	import (
-		"github.com/intelsdi-x/snap-plugin-lib-go/v1/plugin"
-	)
-```
-
-
 
 
 
