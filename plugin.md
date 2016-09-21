@@ -1,5 +1,5 @@
 
-## About This
+## Snap Plugin Go Library Examples
 Here you will find example plugins that cover the basics for writing collector, processor, and publisher plugins.
 
 ## Plugin Naming, Files, and Directory

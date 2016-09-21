@@ -1,5 +1,5 @@
 
-## About This
+## Snap Plugin Go Library: Collector Plugin Example
 Here you will find an example plugin that cover the basics for writing a collector plugin.
 
 ## Plugin Naming, Files, and Directory
@@ -30,9 +30,9 @@ snap-plugin-collector-rand
 ```
 
 * The main file (for example `main.go`) allows each plugin to be a stand-alone binary executable. The main file will include: pluginName and pluginVersion.
-* The [*plugin-name*] folder (for example `rand`) will include all files to implement the appropriate interface methods
-* Your [*plugin-name*] folder  will also include your test files.
-* You should specifiy the *test-size* (either small, medium, or large), see the test size criteria here.
+* The [plugin-name] folder (for example `rand`) will include all files to implement the appropriate interface methods
+* Your [plugin-name] folder  will also include your test files.
+
 
 
 ## Interface Methods
@@ -114,4 +114,22 @@ An example of what using all of them would look like:
 				plugin.Unsecure(c),
 				plugin.RoutingStrategy(d),
 				plugin.CacheTTL(e))
+```
+
+## Testing
+You should specifiy the test size (either small, medium, or large) with the specified build tag `// +build test-size`. The default testing will run all size tests if the build tag is not specified.
+
+
+For example if you want to run only small tests:
+```
+// +build small
+// you must include at least one line between the build tag and the package name.
+package rand
+```
+
+For example if you want to run small and medium tests:
+```
+// +build small medium
+
+package rand
 ```
