@@ -116,7 +116,24 @@ An example of what using all of them would look like:
 ```
 
 
+### Testing
 
+You should specifiy the test size (either small, medium, or large) with the specified build tag `// +build test-size`. The default testing will run all size tests if the build tag is not specified.
+
+
+For example if you want to run only small tests:
+```
+// +build small
+// you must include at least one line between the build tag and the package name.
+package rand
+```
+
+For example if you want to run small and medium tests:
+```
+// +build small medium
+
+package rand
+```
 
 
 
