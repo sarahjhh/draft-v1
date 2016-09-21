@@ -2,6 +2,15 @@
 ## Snap Plugin Go Library Examples
 Here you will find example plugins that cover the basics for writing collector, processor, and publisher plugins.
 
+Snap itself runs as a master daemon with the core functionality that may load and unload plugin processes via either CLI or HTTP APIs.
+
+A Snap plugin is a program, or a set of functions or services, written in Go or any language; that may seamlessly integrate with Snap as executables.
+
+Communication between Snap and plugins uses the GRPC protocol. GRPC uses HTTP2, which improves performance versus HTTP1, and uses [protocol buffers](https://developers.google.com/protocol-buffers/) for simplicity, performance, and smaller memory size.
+
+Before starting writing Snap plugins, check out the Plugin Catalog to see if any suit your needs. If not, you need to reference the plugin packages that defines the type of structures and interfaces inside snap and then write plugin endpoints to implement the defined interfaces.
+
+
 ## Plugin Naming, Files, and Directory
 For your plugin, create a new repository and name your plugin project using the following format:
 
